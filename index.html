@@ -11,11 +11,23 @@
 </head>
 
 <body>
+    <!-- todo o site vai ficar dentro da main -->
     <main class="login-container">
         <header>
             <h1>Bem-vindo</h1>
             <p class="subtitle">Entre com suas credenciais para acessar</p>
         </header>
+        <!-- POST precisa ser em maiúsculo -->
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <label for="email">Email ou Usuário</label>
+                <div class="input-group">
+                    <input type="email" id="email" name="email" placeholder="Seu email ou nome de usuário" required autofocus>
+                    <!-- o required tá ligado com o type, ou seja, o required informa que é o email que é necessário -->
+                     <!-- autofocus diz que  -->
+                </div>
+            </div>
+        </form>
 
     </main>
 
