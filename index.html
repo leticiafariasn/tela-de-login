@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <!-- BR em letra maiúscula por conta do navegador Edge -->
+<!-- BR em letra maiúscula por conta do navegador Edge -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Página de Login Segura e Elegante">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="login, acesso, segurança, conta, minha_plataforma">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:900" rel="stylesheet">
     <title>Login | Minha Plataforma</title>
 </head>
 
 <body>
     <!-- todo o site vai ficar dentro da main -->
-    <main class="login-container">
+    <main>
         <header>
-            <h1>Bem-vindo</h1>
-            <p class="subtitle">Entre com suas credenciais para acessar</p>
         </header>
-        <!-- POST precisa ser em maiúsculo -->
-        <form action="/login" method="POST">
-            <div class="form-group">
-                <label for="email">Email ou Usuário</label>
-                <div class="input-group">
-                    <input type="email" id="email" name="email" placeholder="Seu email ou nome de usuário" required autofocus>
-                    <!-- o required tá ligado com o type, ou seja, o required informa que é o email que é necessário -->
-                     <!-- autofocus diz que  -->
+        <div>
+            <!-- POST precisa ser em maiúsculo -->
+            <div class="card">
+                <div class="content-box">
+                    <div class="login"> Login</div>
+                    <form action="/login" method="POST">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="email" id="email" name="email" placeholder="E-mail" required autofocus>
+                            </div>
+                            <!-- required' significa que este campo não pode ficar vazio ao enviar o formulário -->
+                            <!-- 'type="email"' exige que o valor inserido tenha um formato de email válido (com @, por exemplo) -->
+                            <!-- 'autofocus' coloca o cursor neste campo automaticamente quando a página carrega -->
+                            <div class="input-group">
+                                <input type="password" id="password" name="password" placeholder="Senha" required>
+                            </div>
+                            <button>Acessar</button><br>
+                            <div class="links">
+                                <a href="#">Já é assinante e não tem login?</a><br>
+                                <a href="#" id="forgot">Esqueceu a senha?</a>
+                            </div>
+
+                        </div>
                 </div>
             </div>
+        </div>
         </form>
 
     </main>
