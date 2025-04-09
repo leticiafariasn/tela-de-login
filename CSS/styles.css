@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #f0f2f5;
+    background-color: #f0f2f5; /*para ficar diferente do card*/
     font-family: 'Roboto Condensed', sans-serif; 
     /*fonte que inseri pelo head do html*/
     display: flex;
@@ -15,7 +15,7 @@ body{
 }
 
 .card{
-    background-color: #ffffff;
+    background-color: #ffffff; /*coloquei para destacar melhor do fundo*/
     position: relative;
     display: flex;
     flex-direction: column;
